@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign up Page</title>
+	<script type="text/javascript">
+		function checkP() 
+		{
+			var x=document.getElementById('p').value;
+			var y=document.getElementById('p1').value;
+			if (x!=y) 
+			{
+				alert("Password does not match!!!");
+			}
+			else
+			{
+				window.location.assign("reg.html");
+			}
+			return false;
+		}
+	</script>
+</head>
+<body background="2.jpg">
+
+	<h3 style="margin: 50px" align="center">whatever you are into its all free</h3>
+	<h1 style="font-family: Bradley Hand ITC " align="center">SignUp</h1>
+<table align="center" >
+	<tr><th><input type="text" name="" id="un" placeholder="Username"></th></tr><br>
+	<tr><th><input type="text" name="" id="em" placeholder="Email"></th></tr><br>
+	<tr><th><input type="password" name="" id="p" placeholder="Password"></th></tr><br>
+	<tr><th><input type="password" name="" id="p1" placeholder="Confirm Password" onsubmit="return checkP()"></th></tr><br>
+	<tr>
+		<th>
+			Birth Date<br><input type="Date" name="" id="dd">
+		</th>
+	</tr>
+	<tr><th><input type="submit" id="sub" ></th></tr>
+	
+</table>
+</body>
+</html>
