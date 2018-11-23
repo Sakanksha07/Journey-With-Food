@@ -138,7 +138,7 @@ else
     h1{font-family:Arial, Helvetica, sans-serif;color:#999999;}
   </style>
 </head>
-<body background="2.jpg">
+<body background="food9.jpg" >
 
 <nav style="background-color: #f4ad42" class="navbar navbar-inverse">
   <div class="container-fluid" class="list1">
@@ -173,16 +173,14 @@ else
 </ol>
  <div class="list2" style="width: 430px"><li><input type="search" id="mySearch" placeholder="Search for something..">
     <button onclick="myFunction()">Search</button></li></div>
-     
   </div>
-  
  </nav>
-
 </div>
+
 <h3 style="font-family: Bradley Hand ITC ; margin: 50px; font-size: 40px" align="center">JOURNEY WITH FOOD</h3>
 <h3 style="font-family: Blackadder ITC ; margin: 50px; font-size: 40px" align="center">whatever you are into its all free</h3>
   <?php if (empty($_SESSION["name"])) { ?>
-    <h1 style="font-family: Bradley Hand ITC; font-size: 50px" align="center">SignUp</h1>
+    <h1 style="font-family: Bradley Hand ITC; font-size: 50px; color: black" align="center">SignUp</h1>
 <table align="center">
   <form name="f1" method="POST" action="index.php" onsubmit="return check()">
     <tr><th><input style="height: 30px" type="text" name="un" id="un" placeholder="Username"></th></tr><br>
@@ -194,8 +192,22 @@ else
   </form>
 </table>
 <div><?php echo $output; ?></div>
-<?php } 
+<?php }
+else{ 
  ?>
+ <div style="float: right;">
+  <img src="food1.jpg" height="400px" width="500px">
+</div>
+<div style="">
+  <img src="food2.jpg">
+</div>
+<div style="float: right;">
+  <img src="food3.jpg">
+</div>
+<div style="">
+  <img src="food4.jpg" height="300px" width="400px">
+</div>
+<?php } ?>
   <script>
   function myFunction() {
       var x = document.getElementById("mySearch").placeholder;
